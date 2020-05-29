@@ -854,6 +854,10 @@ p {
         height: 283px;
     }
 
+    .card-img-top {
+        width: 75%;
+    }
+
     /* Slant Section */
 
     .slant {
@@ -898,8 +902,8 @@ p {
     }
 
     .logo {
-        width: 193.15px;
-        height: 33.3px;
+        width: 153.15px;
+        height: 28.3px;
         margin-right: 100px;
     }
 
@@ -935,9 +939,27 @@ p {
     }
 }
 
+@media (min-width: 1200px) {
+    .vision {
+        height: 850px;
+    }
 
+    .vision-header {
+        width: 450px;
+        margin-left: 50px;
+    }
 
+    .vision-content {
+        width: 550px;
+        margin-right: 50px;
+    }
 
+    .logo {
+        width: 153.15px;
+        height: 28.3px;
+        margin-right: 100px;
+    }
+}
 
 
 @media (min-width:1440px)  {
@@ -1133,6 +1155,10 @@ p {
     .investor-content .card {
         width: 528px;
         height: 283px;
+    }
+
+    .card-img-top {
+        width: 70%;
     }
 
     /* Slant Section */
