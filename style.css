@@ -1,0 +1,939 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Reset Code Above */
+
+/* General Formatting */
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px; 
+}
+
+.card {
+    border: 1px solid #E5E5E5;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+}
+
+
+/* Navbar */
+
+.nav {
+    height: 59px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-links {
+    display: none;
+}
+
+.nav-buttons {
+    display: none;
+}
+
+.logo {
+    width: 127.59px;
+    height: 22px;
+}
+
+/* Vision */
+
+.vision {
+    height: 1075px;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+
+.hero-img {
+    background: url(img/hero-img-mobile.png) no-repeat;
+    background-size: 100%;
+    height: 296px;
+}
+
+.vision-header {
+    height: 108px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 100%;
+    padding-top: 10px;
+}
+
+.vision-content {
+    height: 608px;
+    padding-top: 10px;
+}
+
+/* Culture Section */
+
+.culture {
+    height: 1051px;
+}
+
+.culture-header {
+    padding-top: 10px;
+}
+
+.culture-header h1 {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 110%;
+}
+
+.culture-header p {
+    color: #537089;
+}
+
+.culture-content {
+    display: flex;
+    height: 665px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.culture-content img {
+    width: 56px;
+    height: 56px;
+}
+
+.culture-content h1 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.culture-content p {
+    color: #537089;
+}
+
+.culture-connect {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.culture-connect .btn{
+    height: 49px;
+    width: 270px;
+}
+
+/* Timeline Section */
+
+.timeline {
+    height: 915px;
+}
+
+.timeline-header {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    height: 98px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 110%;
+}
+
+.timeline-content {
+    display: flex;
+    justify-content: center;
+    height: 817px;
+    background: #EFF8FF;
+}
+
+.timeline-content .col {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-content img {
+    width: 56px;
+    height: 56px;
+}
+
+.timeline-text {
+    width: 157px;
+    font-weight: bold;
+}
+
+.year {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0688FA;
+}
+
+/* Offices Section */
+
+.office {
+    height: 583px;
+    background: url(img/Vector-19-mobile.svg) no-repeat;
+    background-position-y: 100%;
+    background-size: 100%;
+}
+
+.office-header {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    height: 98px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 110%;
+}
+
+.office-content {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.office-content img {
+    width: 56px;
+    height: 56px;
+    margin-top: 10px;
+}
+
+.office-content .card-container {
+    height: 435px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.office-content .card {
+    text-align: center;
+    display: block;
+    width: 271px;
+}
+
+.card-body h5 {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 34px;
+}
+
+
+/* Investors Section */
+
+.investor {
+    height: 863px;
+    background: url(img/Mask-Group-mobile.svg) no-repeat;
+    background-position-y: 0%;
+    background-size: 100%;
+}
+
+.investor-header {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    height: 98px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 110%;
+}
+
+.investor-content {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.investor-content .card {
+    text-align: center;
+    display: block;
+    width: 272px;
+    height: 145.79px;
+}
+
+.investor-content .card-container {
+    height: 705px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.investor-content .card-body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+}
+
+.card-container .card {
+    margin: 15px;
+}
+
+.card-container .row {
+    justify-content: center;
+}
+
+/* Slant Section */
+
+.slant {
+    background: orange;
+    height: 377px;
+    background: url(img/Vector-18.png) no-repeat;
+    background-position-y: 0%;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.slant-header {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    height: 98px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 110%;
+    color: white;
+}
+
+.slant-content {
+    height: 377px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.slant-content .buttons {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+
+.demo {
+    background: #FFFFFF;
+}
+
+.use-case {
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.buttons {
+    height: 119px;
+}
+
+.buttons .btn {
+    width: 272px;
+    height: 49px;
+}
+
+/* Footer Section */
+
+.footer {
+    height: 680px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-content {
+    height: 680px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer h1 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+/* Copyright Section */
+
+.copyright {
+    height: 318px;
+    background: url(img/waves-mobile.png) no-repeat;
+    background-position-y: 100%;
+    background-size: 100%;
+    background-color: #F4F4F4;
+    display: flex;
+    align-items: center;
+}
+
+.copyright-content {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.copyright-content h1 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.copyright-content .row {
+    justify-content: space-evenly;
+}
+
+.copyright1 {
+    width: 150px;
+}
+
+.copyright2 {
+    flex-direction: column;
+}
+
+.copyright3 {
+    width: 322px;
+}
+
+@media (min-width:768px)  {
+
+    .vision {
+        height: 916px;
+    }
+
+    .hero-img {
+        background: url(img/hero-img-tablet.png) no-repeat;
+        background-size: 100%;
+    }
+
+    .vision-header {
+        width: 300px;
+        float: left;
+    }
+
+    .vision-content {
+        width: 304px;
+        float: right;
+    }
+
+    /* Culture Section */
+
+    .culture {
+        height: 689px;
+    }
+
+    .culture-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .culture-header p {
+        width: 429px;
+        text-align: center;
+    }
+
+    .culture-content {
+        flex-direction: row;
+        margin-top: 20px;
+        height: 320px;
+    }
+
+    .culture-content h1 {
+        margin-bottom: 10px;
+    }
+
+    .culture1,
+    .culture2,
+    .culture3 {
+        width: 183px;
+    }
+
+    .culture-connect p {
+        width: 381px;
+        text-align: center;
+    }
+
+    .culture-connect .btn {
+        width: 167px;
+    }
+
+    /* Timeline Section */
+
+    .timeline-content {
+        height: 732px;
+    }
+
+    .timeline-text {
+        width: 325px
+    }
+
+    .year {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Office Section */
+
+    .office {
+        height: 423px;
+        background: url(img/Vector-19-tablet.png) no-repeat;
+        background-position-y: 100%;
+        background-size: 100%;
+    }
+
+    .office-content {
+        display: inline;
+    }
+
+    .office-content .card-container {
+        flex-direction: row;
+        height: 250px;
+    }
+
+    /* Investor Section */
+
+    .investor {
+        height: 531px;
+        background: url(img/Mask-Group-tablet.svg) no-repeat;
+        background-position-y: 0%;
+        background-size: 100%;
+    }
+
+    .investor-content .card-container {
+        width: 600px;
+        height: 339px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-container .card {
+        margin: 15px;
+    }
+
+    .card-container .row {
+        justify-content: center;
+    }
+
+    /* Slant Section */
+
+    .slant {
+        height: 257px;
+        background: url(img/bg-tablet.png) no-repeat;
+        background-position-y: 50%;
+        background-position-x: 50%;
+        background-size: 724px 215px;
+    }
+
+    .slant-content {
+        width: 724px;
+        height: 257px;
+    }
+
+    .slant-header {
+        width: 645.83px;
+        height: 39.89px;
+    }
+
+    .slant-content .buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .buttons .btn {
+        width: 146px;
+        height: 43px;
+    }
+
+    /* Footer Section */
+
+    .footer {
+        height: 593px;
+    }
+
+    .footer-content {
+        height: 400px;
+        flex-direction: row;
+    }
+
+    .footer-content .row {
+        width: 200px;
+    }
+
+    /* Copyright Section */
+
+    .copyright {
+        height: 231px;
+        background: url(img/footer-waves-tablet.png) no-repeat;
+        background-position-y: 100%;
+        background-size: 100%;
+        background-color: #F4F4F4;
+    }
+
+    .copyright-content {
+        width: 100%;
+        height: 200px;
+        justify-content: flex-start;
+    }
+
+    .copyright-content .copyright1 {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .copyright1 img {
+        margin: 10px;
+    }
+
+    .copyright-content h1 {
+        margin: 10px;
+    }
+
+    .copyright-content .copyright2 {
+        width: 100%;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+
+    .copyright-content .copyright3 {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .copyright-content .copyright-content .row {
+        justify-content: none;
+    }
+}
+@media (min-width:1440px)  {
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .nav-links {
+        display: flex !important;
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 400px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+        color: #002240;
+    }
+
+    .nav-buttons {
+        display: flex !important;
+    }
+
+    .login {
+        width: 96px;
+        height: 42px;
+        mix-blend-mode: normal;
+        border: 1px solid #0688FA;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+
+    .get-demo {
+        width: 151px;
+        height: 42px;
+        background: #0688FA;
+        mix-blend-mode: normal;
+        border-radius: 5px;
+    }
+
+    .vision {
+        height: 992px;
+    }
+
+    .hero-img {
+        background: url(img/hero-img-desktop.png) no-repeat;
+        background-size: 100%;
+        margin-left: 110px;
+        margin-right: 110px;
+    }
+
+    .vision-header {
+        width: 498px;
+        height: 187px;
+        margin-left: 118px;
+        font-size: 58px;
+        line-height: 62px;
+    }
+
+    .vision-content {
+        margin-right: 118px;
+        width: 590px;
+        height: 513px;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    /* Culture Section */
+
+    .culture-header h1 {
+        font-size: 58px;
+        line-height: 62px;
+    }
+
+    .culture-header p {
+        font-size: 21px;
+        line-height: 38px;
+        width: 920px;
+    }
+
+    .culture1, .culture2, .culture3 {
+        width: 354px;
+    }
+
+    .culture-content img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .culture-content p {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .culture-connect p {
+        width: 1209px;
+        text-align: center;
+        font-size: 21px;
+        line-height: 38px;
+    }
+
+    .culture-connect .btn {
+        width: 198px;
+        height: 59px;
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    /* Timeline Section */
+
+    .timeline-header {
+        font-size: 58px;
+        line-height: 62px;
+    }
+
+    .year {
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 34px;
+
+        color: #0688FA;
+    }
+
+    .timeline-content img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .timeline-text {
+        width: 738px;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    /* Office Section */
+
+    .office {
+        height: 595px;
+        background: url(img/Vector-19-desktop.png) no-repeat;
+        background-position-y: 100%;
+        background-size: 100%;
+    }
+
+    .office-header {
+        font-size: 58px;
+        line-height: 62px;
+    }
+
+    .office-content .card {
+        width: 528px;
+        height: 283px;
+    }
+
+    .office-content img {
+        width: 80px;
+        height: 80px;
+        margin-top: 20px;
+    }
+
+    .card-title {
+        font-size: 32px;
+        line-height: 34px;
+    }
+
+    .card-text {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    /* Investor Section */
+
+    .investor {
+        height: 954px;
+        background: url(img/Mask-Group-desktop.png) no-repeat;
+        background-position-y: 0%;
+        background-size: 100%;
+    }
+
+    .investor-header {
+        font-size: 58px;
+        line-height: 62px;
+    }
+
+    .investor-content .card-container {
+        width: 1100px;
+        height: 800px;
+    }
+
+    .investor-content .card {
+        width: 528px;
+        height: 283px;
+    }
+
+    /* Slant Section */
+
+    .slant {
+        height: 469px;
+        background-size: 1313.82px 398.53px;
+    }
+
+    .slant-content {
+        height: 500px;
+    }
+
+    .slant-header {
+        font-size: 48px;
+        line-height: 120%;
+    }
+
+    .demo {
+        margin-right: 20px;
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .use-case {
+        margin-left: 20px;
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .buttons .btn {
+        width: 272px;
+        height: 62px;
+    }
+
+    /* Footer Section */
+
+    .footer {
+        height: 448px;
+    }
+
+    .footer-content .row {
+        width: 400px;
+    }
+
+    .logo {
+        width: 193.15px;
+        height: 33.3px;
+        margin-right: 100px;
+    }
+
+    .footer-content .row p {
+        font-size: 18px;
+        line-height: 42px;
+    }
+
+    .copyright {
+        height: 323px;
+        background: url(img/footer-waves-desktop.png) no-repeat;
+        background-position-y: 100%;
+        background-size: 100%;
+        background-color: #F4F4F4;
+    }
+
+    .copyright-content .row p {
+        font-size: 18px;
+        line-height: 24px;
+        margin-left: 60px;
+    }
+
+    .copyright-content .row h1 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-left: 60px;
+    }
+
+    .copyright-content img {
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+    }
+}
