@@ -72,6 +72,7 @@ p {
 
 .navbar {
     justify-content: space-between;
+    background: #FFFFFF !important;
 }
 
 .nav {
