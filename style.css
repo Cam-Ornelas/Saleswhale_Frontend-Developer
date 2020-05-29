@@ -75,6 +75,10 @@ p {
     background: #FFFFFF !important;
 }
 
+.navbar-toggler {
+    border-width: 2px;
+}
+
 .nav {
     height: 59px;
 }
