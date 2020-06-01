@@ -100,6 +100,8 @@ p {
     font-size: 18px;
     font-weight: bold;
     color: #0688FA;
+    text-align: center;
+    width: 160px;
     transition: .35s ease-in-out;
 }
 
