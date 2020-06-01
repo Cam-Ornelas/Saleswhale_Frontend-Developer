@@ -90,10 +90,23 @@ p {
 }
 
 .nav-links {
-    display: none;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80px;
+}
+
+.nav-links p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0688FA;
 }
 
 .nav-buttons {
+    display: none;
+}
+
+.logo {
     display: none;
 }
 
@@ -677,6 +690,10 @@ p {
 
 @media (min-width:1024px)  {
 
+    .logo {
+        display: flex !important;
+    }
+
     .navbar .logo2 {
         display: none;
     }
@@ -694,8 +711,8 @@ p {
 
     .nav-links {
         display: flex !important;
-        justify-content: space-evenly;
-        flex-direction: row;
+        justify-content: space-evenly !important;
+        flex-direction: row !important;
         font-weight: bold;
         font-size: 18px;
         line-height: 23px;
@@ -997,9 +1014,8 @@ p {
     }
 
     .nav-links {
-        display: flex !important;
-        justify-content: space-evenly;
-        flex-direction: row;
+        justify-content: space-evenly !important;
+        flex-direction: row !important;
         font-weight: bold;
         font-size: 18px;
         line-height: 23px;
