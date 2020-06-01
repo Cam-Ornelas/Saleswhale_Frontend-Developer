@@ -93,13 +93,20 @@ p {
     /* display: none; */
     flex-direction: column;
     justify-content: space-evenly;
-    height: 80px;
+    height: 100px;
 }
 
 .nav-links p {
     font-size: 18px;
     font-weight: bold;
     color: #0688FA;
+}
+
+.nav-links p:hover {
+    background-color: #0688FA;
+    color: #FFFFFF;
+    border-radius: 25px;
+    padding: 8px;
 }
 
 .nav-buttons {
